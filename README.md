@@ -11,7 +11,9 @@ ADD CONTENT
 Wireframe***********************************:
 https://github.com/davidblue90125/mental-health-awareness-3/blob/main/Desktop-Wireframe.png
 
-![Model](https://github.com/davidblue90125/mental-health-awareness-3/blob/main/Desktop-Wireframe.png)
+![Desktop Wireframe](https://github.com/davidblue90125/mental-health-awareness-3/blob/main/Desktop-Wireframe.png)
+
+
 
 - Title
 - Live Site link
