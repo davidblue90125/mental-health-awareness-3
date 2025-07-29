@@ -9,8 +9,7 @@
     --primary-color: #44471E; /* dark moss green */
     --secondary-color: #D0D585; /* citron */
     --tertiary-color: #F9EDDD; /* antique white */
-    --highlight-color: #416a8e; /* blue */
-    --highlight-color-light: #7a9fc2; /* light blue */
+   
 }
 
 body {
@@ -18,6 +17,7 @@ body {
     color: var(--primary-color);
     background-color: var(--secondary-color);   
     font-size: 1.2rem;
+    padding-top: 75px; /* Pushes top of the header down under the fixed navbar */
 }
 
 /* Logo styling */
@@ -28,6 +28,12 @@ body {
 /* Navbar styling */
 .navbar {
     background-color: var(--tertiary-color);
+    
+}
+
+.nav-link{    
+    color:var(--primary-color);
+    
 }
 
 .nav-link:hover{    
@@ -69,7 +75,7 @@ body {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: var(--highlight-color)
+    background-color: var(--highlight-color);
     border-radius: 50%;
     width: 40px;
     height: 40px;
