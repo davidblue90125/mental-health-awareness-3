@@ -3,13 +3,22 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-body {
-    font-family: 'Quicksand', sans-serif;    
-    color: #44471E; 
-    background-color: #D0D585; /* citron */    
-    font-size: 1.2rem;
+/* CSS Variables */
+:root {
+    --primary-font: "Quicksand", sans-serif;
+    --primary-color: #44471E; /* dark moss green */
+    --secondary-color: #D0D585; /* citron */
+    --tertiary-color: #F9EDDD; /* antique white */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
 
+body {
+    font-family: var(--primary-font);  
+    color: var(--primary-color);
+    background-color: var(--secondary-color);   
+    font-size: 1.2rem;
+}
 
 /* Logo styling */
 .navbar-logo {
@@ -18,13 +27,18 @@ body {
 }
 /* Navbar styling */
 .navbar {
-    background-color: #f9eddd; /*antique white */
+    background-color: var(--tertiary-color);
 }
+
+.nav-link:hover{    
+    text-decoration: underline;   
+}
+
 
 /* Hero Section */
 
 #hero {
-    background-color: #f9eddd; 
+    background-color: var(--tertiary-color);
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../images/Nature-scene.png');
     background-position: 50% 60%;
     min-height: 400px;
@@ -46,6 +60,25 @@ body {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+/* Footer Styles */
+.footer {
+    background-color: var(--tertiary-color);
+}
 
+.footer-text {
+    color: var(--primary-color);
+    
+}
 
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
 
+.social-link {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+    
+}

@@ -1,15 +1,15 @@
-﻿﻿#mental-health-awareness
+﻿﻿# mental-health-awareness*****
 <p>INSERT IMAGE OF WEBSITE???</p>
 <p>**Author**: David Blue</p>
 
+<p>This is the first project of my 16-week full-stack development bootcamp with Code Institute.</p>
 
-
-This is the first project of my 16-week full-stack development bootcamp with Code Institute.
 # Project overview
 ADD CONTENT
 
-Wireframe***********************************:
-https://github.com/davidblue90125/mental-health-awareness-3/blob/main/Desktop-Wireframe.png
+# Wireframe
+
+
 
 ![Desktop Wireframe](https://github.com/davidblue90125/mental-health-awareness-3/blob/main/Desktop-Wireframe.png)
 
