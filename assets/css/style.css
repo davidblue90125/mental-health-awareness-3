@@ -8,8 +8,7 @@
     --primary-font: "Quicksand", sans-serif;
     --primary-color: #44471E; /* dark moss green */
     --secondary-color: #D0D585; /* citron */
-    --tertiary-color: #F9EDDD; /* antique white */
-   
+    --tertiary-color: #F9EDDD; /* antique white */   
 }
 
 body {
@@ -38,22 +37,18 @@ li {
 }
 /* Navbar styling */
 .navbar {
-    background-color: var(--tertiary-color);
-    
+    background-color: var(--tertiary-color);    
 }
 
 .nav-link{    
-    color:var(--primary-color);
-    
+    color:var(--primary-color);    
 }
 
 .nav-link:hover{    
     text-decoration: underline;   
 }
 
-
 /* Hero Section */
-
 #hero {
     background-color: var(--tertiary-color);
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('../images/Nature-scene.png');
@@ -94,8 +89,7 @@ li {
 .card-img-top {
     max-height: 304.67px;
     object-fit: cover;
-    width: 100%;
-    position: 80% 80%;
+    width: 100%;    
 }
 
 /* Carousel Styles */
@@ -113,17 +107,17 @@ li {
 }
 
 #testimonials{
-    min-height: 220px;
+    min-height: 350px;
 }
 
 /* Footer Styles */
 .footer {
     background-color: var(--tertiary-color);
+    margin-top: 20px;
 }
 
 .footer-text {
-    color: var(--primary-color);
-    
+    color: var(--primary-color);    
 }
 
 .social-links {
@@ -136,5 +130,12 @@ li {
     color: var(--primary-color);
     font-size: 1.4rem;
     text-decoration: none;
-    
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .social-links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
 }
