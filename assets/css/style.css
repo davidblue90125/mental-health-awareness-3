@@ -18,6 +18,12 @@ body {
     background-color: var(--secondary-color);   
     font-size: 1.2rem;
     padding-top: 75px; /* Pushes top of the header down under the fixed navbar */
+    scroll-padding-top: 85px; /* Adds padding when scrolling to anchor links */
+}
+
+/* Anchor offset for fixed navbar */
+section[id] {
+    scroll-margin-top: 85px;
 }
 
 /* List items styling */
@@ -101,7 +107,7 @@ li {
 }
 
 #testimonials{
-    min-height: 350px;
+    min-height: 220px;
 }
 
 /* Footer Styles */

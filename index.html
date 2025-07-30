@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- Favicon -->
-     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">     
 </head>
+
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -411,15 +412,7 @@
                             <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
-                            </button>
-
-                            <!-- Carousel Indicators -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-
+                            </button>                        
                         </div>
                     </div>  
                 </div>
@@ -427,7 +420,7 @@
         </section>
 
            <!-- Contact -->
-        <section id="contact" class="container section py-5">
+        <section id="contact" class="container section">
             <div class="container mt-4">
                 <div class="row">
                     <div class="col-12">
@@ -459,8 +452,7 @@
                         </div>
                         <button type="submit" class="btn btn-light btn-primary text-center">Contact Us!</button>
                     </form>
-            </div>
-            
+            </div>            
         </section>
     </main>
 
@@ -501,5 +493,26 @@
             </div>
         </div>
      </footer>
+     <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+<script>
+    document
+        .querySelectorAll(".navbar-collapse .nav-link")
+        .forEach((link) => {
+            link.addEventListener("click", function (e) {
+                let section = document.querySelector(e.target.getAttribute("href"));
+                if (section) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                    window.scroll({
+                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                        behavior: "smooth",
+                    });
+                    document
+                        .querySelector(".navbar-collapse")
+                        .classList.remove("show"); // Collapse navbar
+                }
+            });
+        });
+</script>
 </body>
 </html>
