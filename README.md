@@ -84,6 +84,10 @@ Link to live website: <https://davidblue90125.github.io/mental-health-awareness-
 
 <p><b>Features left to implement</b></p>
 <ul>
+    <li>Resources Section</li>
+    <ul>
+            <li>Improve the look of this section by using buttons as links rather than just text.</li>
+    </ul>
     <li>Testimonials</li>
         <ul>
             <li>This would provide reassurance to users that Mindkind has been a help to other people.</li>
