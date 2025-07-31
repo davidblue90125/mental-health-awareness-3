@@ -400,20 +400,31 @@
             link.addEventListener("click", function (e) {
                 let href = e.target.getAttribute("href");
                 if (href && href.startsWith("#")) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    
                     let section = document.querySelector(href);
                     if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
-                        let navbar = document.querySelector(".navbar");
-                        let navbarHeight = navbar ? navbar.offsetHeight + 10 : 85; // Add 10px buffer
-                        window.scroll({
-                            top: section.offsetTop - navbarHeight,
-                            behavior: "smooth",
-                        });
-                        // Collapse navbar on mobile
+                        // Collapse navbar on mobile first
                         let navbarCollapse = document.querySelector(".navbar-collapse");
-                        if (navbarCollapse.classList.contains("show")) {
+                        if (navbarCollapse && navbarCollapse.classList.contains("show")) {
                             navbarCollapse.classList.remove("show");
                         }
+                        
+                        // Wait a moment for navbar to collapse, then scroll
+                        setTimeout(() => {
+                            // Get navbar height after collapse
+                            let navbar = document.querySelector(".navbar");
+                            let navbarHeight = navbar ? navbar.offsetHeight + 15 : 90;
+                            
+                            // Get section position relative to document
+                            let sectionPosition = section.offsetTop;
+                            
+                            // Scroll to position
+                            window.scrollTo({
+                                top: sectionPosition - navbarHeight,
+                                behavior: "smooth",
+                            });
+                        }, 150); // Small delay to allow navbar to collapse
                     }
                 }
             });
