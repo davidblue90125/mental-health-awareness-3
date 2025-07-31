@@ -1,4 +1,4 @@
-﻿﻿# mental-health-awareness*****
+﻿# mental-health-awareness*****
 <p>INSERT IMAGE OF WEBSITE???</p>
 <p>**Author**: David Blue</p>
 
@@ -10,8 +10,7 @@ ADD CONTENT
 # Wireframe
 
 
-
-![Desktop Wireframe](https://github.com/davidblue90125/mental-health-awareness-3/blob/main/Desktop-Wireframe.png)
+![Desktop Wireframe](/assets/images/Desktop-Wireframe.png)
 
 
 
