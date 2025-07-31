@@ -1,12 +1,42 @@
-﻿# mental-health-awareness*****
-<p>INSERT IMAGE OF WEBSITE???</p>
-<p>**Author**: David Blue</p>
+﻿# Mindkind - Mental Health Awareness
+<p>Author: David Blue</p>
 
-<p>This is the first project of my 16-week full-stack development bootcamp with Code Institute.</p>
+<p>Mindkind is a website for a fictitious mental health awareness company, which aims to provide information on common mental health issues, tips on how to overccome them, and links to useful external resources. There is a contact form whereby users can contact Mindkind for more information.</p>
 
-# Project overview
-ADD CONTENT
+![Am I Responsive](/assets/images/readme/amiresponsive.png)
 
+# Project brief
+<p><b>External User’s Goal:</b> The user seeks accessible, beginner-friendly information on mental health, including how to recognize common issues and manage stress, presented in a supportive and organised layout.</p>
+
+<p><b>Site Owner’s Goal:</b> The site owner wants to create a welcoming webpage that provides basic mental health information using a clean and supportive design. The focus is on using HTML and CSS with Bootstrap to create a calming and well-organised user experience.<p>
+
+<p><b>Potential Features might Include:</b></p>
+<ul>
+    <li>Hero Section with Positive Messaging: A Bootstrap Jumbotron with an encouraging message about mental health, using a calming colour scheme and a simple background image.</li>
+    <li>Information Cards: Use Bootstrap’s card components to present mental health tips and common issues, providing a visually appealing way to organise content.</li>
+    <li>Resource Links: A grid layout for external links to mental health resources styled with Bootstrap buttons to make them stand out.</li>
+    <li>Positive Affirmations: Use Bootstrap’s text utilities to include a section with uplifting quotes or messages to encourage users.</li>    
+</ul>
+
+![alt text](/assets/images/readme/amiresponsive.png)
+<ul>
+<li>Navigation Bar</li>
+    <ul>
+        <li>Featured on both pages (the Home Page and the Success Page which appears when the Contact form has been submitted), the fully responsive navigation bar includes links to the Logo, Home page, About, Common Issues, Wellbeing Tips, Resources and Contact pages and is identical in each page to allow for easy navigation.</li>
+        <li>This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.</li>
+    </ul>
+<li>Hero image</li>
+<li>Common Issues</li>
+<li>Wellbeing Tips</li>
+<li>Resources</li>
+<li>Contact Us</li>
+<li>Footer</li>
+</ul>
+
+# Features left to implement
+Testimonials
+Blog
+Search functionality
 # Wireframe
 
 
